@@ -1,4 +1,4 @@
-这个模版更新修改自：https://www.overleaf.com/latex/templates/hua-dong-shi-fan-da-xue-shuo-bo-shi-lun-wen-latexmo-ban-2024jie/cdshhhfftbjg。
+这个模版更新修改自：https://www.overleaf.com/latex/templates/hua-dong-shi-fan-da-xue-shuo-bo-shi-lun-wen-latexmo-ban-2024jie/cdshhhfftbjg
 华东师范大学心理与认知科学学院博士（硕士）论文模板
 ===
 LaTeX File for Doctor (Master) Thesis of ECNU-SEI
@@ -6,37 +6,46 @@ LaTeX File for Doctor (Master) Thesis of ECNU-SEI
 
 
 ### 毕业论文目录结构
-+ abstract					-(中英文摘要目录)
-	+ abstract.tex			-(中文摘要)
-	+ abstract-en.tex		-(英文摘要)
-+ achievements				-(科研成果目录)
-	+ achievements.tex		-(科研成果)
-+ acknowledgement			-(致谢目录)
-        + acknowledgement-tmlc.tex	-(查重版致谢，通常仅需保留标题)
-	+ acknowledgement.tex	-(致谢)
-+ chapters					-(章节目录)
-	+ fig-0					-(校徽,校名图片目录)
-	+ fig					-(图片目录，可任意增加多个文件夹)
++ **1_figures**             -(图片存储)
+	+ logo					-(校徽,校名图片目录)
++ **1_tables**              -(表格存储)
+	+ 01_abbreviation		-(横向表格样例)
++ **A_Preliminary Section**					
+	+ inner-cover.tex		-(中文封面)
+	+ inner-cover-en.tex	-(英文封面)
+    + copyright.tex			-(原创性声明)
+	+ member-list.tex		-(答辩成员名单)
+    + abstract					-(中英文摘要目录)
+    	+ abstract.tex			-(中文摘要)
+    	+ abstract-en.tex		-(英文摘要)
+    + graphic.tex (图表格式和目录)
+
++ **B_Main Body**				-(章节目录)
 	+ chapter-1.tex			-(章节一)
 	+ chapter-2.tex			-(章节二)
 	+ chapter-3.tex			-(章节三)
 	+ chapter-4.tex			-(章节四)
 	+ chapter-5.tex			-(章节五，可任意增加新的章节，并在main.tex中添加对应代码)
-+ format					-(格式目录)
-	+ format.tex			-(引用,定义)
-	+ graphic.tex			-(图表格式)
-+ preface					-(序言目录)
-	+ copyright.tex			-(原创性声明)
-	+ inner-cover.tex		-(中文封面)
-	+ inner-cover-en.tex	-(英文封面)
-	+ member-list.tex		-(答辩成员名单)
-+ references				-(参考文献引用目录)
-	+ paper.bib				-(manual格式参考文献)
-	+ paper-manual.bib      -(auto格式参考文献)
+
+
++ **C1_References**				-(参考文献引用目录)
+    + zotero_better-bibtex_auto-update.bib（参考文献)
 	+ GBT7714-2005.bst		-(参考文献格式)
 	+ GBT7714-2005NLang.bst	-(参考文献格式)
-+ main.tex					-(latex入口文件)
-+ readme.md                 -(本说明文件)
++ **C2_Appendix**
+    + Chapter7_Appendix （附录内容）
+    
++ **C3_Acknowledgement**
+    + acknowledgement			-(致谢目录)
+            + acknowledgement-tmlc.tex	-(查重版致谢，通常仅需保留标题)
+    	+ acknowledgement.tex	-(致谢)
+
++ **format**					-(格式目录)
+	+ format.tex			-(引用,定义)
+    + settings.tex          -(一些命令)
+    
++ **main**.tex					-(latex入口文件)
++ **readme**.md                 -(本说明文件)
 
 ### 毕业论文参数配置
 以下的配置均在`main.tex`的前三行中完成。由于各年级、各院系的标准不同，同时专硕、学硕、博士间也有很大差异，因此，请务必仔细核对其中的每一项是否按照标准配置。如有必要，请修改`main.tex`中的代码以保证正确显示。
